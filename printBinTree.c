@@ -6,15 +6,15 @@
 
 
 
-//void printTree(TLeaf* leaf)
-//{
-//	if (leaf == NULL) {
-//		return;
-//	}
-//
-//	printTree(leaf->Left);
-//
-//	printf("%d\n", leaf->Val);
-//
-//	printTree(leaf->Right);
-//}
+void printTree(TLeaf* leaf)
+{
+	if (leaf == NULL) {
+		return;
+	}
+
+	printTree(leaf->Left);
+
+	printf("%d\n", leaf->Val);
+
+	printTree(leaf->Right);
+}
